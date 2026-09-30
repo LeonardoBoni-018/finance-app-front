@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@/api/*": [
+        "src/api/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/store/*": [
+        "src/store/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ],
+      "@/constants/*": [
+        "src/constants/*"
+      ],
+      "@/theme/*": [
+        "src/theme/*"
+      ],
+      "@/types/*": [
+        "src/types/*"
+      ]
+    },
+    "types": [
+      "jest",
+      "react",
+      "react-native",
+      "expo"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "app.config.ts",
+    "eas.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".expo"
+  ],
+  "extends": "expo/tsconfig.base"
+}

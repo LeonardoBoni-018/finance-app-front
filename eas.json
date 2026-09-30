@@ -1,0 +1,21 @@
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk", "gradleCommand": ":app:assembleRelease" },
+      "ios": { "simulator": true }
+    },
+    "production": {
+      "distribution": "store",
+      "android": { "buildType": "app-bundle" },
+      "ios": { "enterpriseProvisioning": "universal" }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": { "serviceAccountKeyPath": "./google-play-key.json", "track": "internal" },
+      "ios": { "appleId": "seu@email.com", "ascAppId": "123456789" }
+    }
+  },
+  "cli": { "version": ">= 5.0.0" }
+}
